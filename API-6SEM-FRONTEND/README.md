@@ -1,45 +1,45 @@
 # API-6SEM-FRONTEND
 
-Frontend do **AkaVision** — Classificador de Documentos Técnicos, projeto integrado Fatec SJC × AKAER.
+Frontend of **AkaVision** — Technical Document Classifier, an integrated project between Fatec SJC and AKAER.
 
 ## Stack
 
 - **Framework:** Vue
-- **Build tool:** Vite (a confirmar)
+- **Build tool:** Vite (to be confirmed)
 
-## Como rodar localmente
+## Running locally
 
 ```bash
-# 1. Clone o repositório (ou entre na pasta, se já estiver como submódulo do API-6SEM)
-git clone https://github.com/User-Standart/API-6SEM-FRONTEND.git
-cd API-6SEM-FRONTEND
+# 1. Clone the repository and open the frontend folder
+git clone https://github.com/User-Standart/API-6SEM.git
+cd API-6SEM/API-6SEM-FRONTEND
 
-# 2. Instale as dependências
+# 2. Install the dependencies
 npm install
 
-# 3. Configure as variáveis de ambiente
+# 3. Set up the environment variables
 cp .env.example .env
-# edite o .env com a URL do backend local
+# edit .env with the local backend URL
 
-# 4. Rode em modo desenvolvimento
+# 4. Run in development mode
 npm run dev
 
-# 5. Build de produção
+# 5. Production build
 npm run build
 ```
 
-## Fluxo de contribuição
+## Contribution flow
 
-1. Crie uma branch a partir de `develop`: `feature/nome-da-tarefa`
-2. Commits e título do PR seguem [Conventional Commits](https://www.conventionalcommits.org), em inglês: `feat:`, `fix:`, `docs:`, `chore:`, `test:`
-3. Abra o PR contra `develop` — exige 1 aprovação, CI verde e título validado
-4. Merge sempre via **Squash and merge**
+1. Create a branch from `develop`: `feature/task-name`
+2. Commits and PR titles follow [Conventional Commits](https://www.conventionalcommits.org), in English: `feat:`, `fix:`, `docs:`, `chore:`, `test:`
+3. Open the PR against `develop` — requires 1 approval, green CI and a validated title
+4. Always merge with **Squash and merge**
 
 ## CI
 
-O workflow `Frontend CI` roda em todo PR/push para `main` e `develop`: instala dependências e executa o build.
+The `Frontend CI` workflow runs on every PR/push to `main` and `develop`: it installs the dependencies and runs the build.
 
 ## Links
 
-- Repositório agregador: [API-6SEM](https://github.com/User-Standart/API-6SEM)
-- Backend: [API-6SEM-BACKEND](https://github.com/User-Standart/API-6SEM-BACKEND)
+- Main project: [API-6SEM](../README.md)
+- Backend: [API-6SEM-BACKEND](../API-6SEM-BACKEND)

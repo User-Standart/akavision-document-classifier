@@ -1,7 +1,7 @@
 <br />
-<span id="User-Standart"></span>
+<span id="akavision"></span>
 
-# <p align="center">User-Standart</p>
+# <p align="center">AkaVision</p>
 
 <p align="center"><strong>AkaVision</strong> — Technical Document Classifier</p>
 
@@ -22,7 +22,7 @@
 </p>
 
 > Project Status: **In Progress 🚧** <br /><br />
-> Documentation Folder: [Link](https://github.com/User-Standart/API-6SEM/tree/main/docs) 📄 <br /><br />
+> Documentation Folder: [Link](docs) 📄 <br /><br />
 
 ---
 
@@ -55,7 +55,7 @@ The system will enable:
 
 The goal is to reduce the manual effort of reading, classifying and cross-referencing technical documents, while keeping every answer auditable and grounded in the company's own archive.
 
-→ [Back to top](#User-Standart)
+→ [Back to top](#akavision)
 
 ---
 
@@ -154,7 +154,7 @@ Closed decisions made by the Product Owner that orient every User Story. Changin
 | US-29 | E5 | As an auditor, I want to query the access log by user, period and action with export, and be sure no one can alter or delete it, so that we have a trustworthy audit trail. | Low | 5 | 3 | To Do |
  
 
-→ [Back to top](#User-Standart)
+→ [Back to top](#akavision)
 
 ---
 
@@ -182,7 +182,7 @@ Closed decisions made by the Product Owner that orient every User Story. Changin
 - Documentation updated in Git, when applicable
 - No known critical bugs open for the story
 
-→ [Back to top](#User-Standart)
+→ [Back to top](#akavision)
 
 ---
 
@@ -192,11 +192,11 @@ Closed decisions made by the Product Owner that orient every User Story. Changin
 
 | Sprint | Period | Points | History |
 |--------|--------|--------|---------|
-| Sprint 1 | 09/07 – 09/27 | 30 | [Sprint 1 Docs](https://github.com/User-Standart/API-6SEM/tree/main/docs) |
-| Sprint 2 | 10/05 – 10/25 | 35 | [Sprint 2 Docs](https://github.com/User-Standart/API-6SEM/tree/main/docs) |
-| Sprint 3 | 11/02 – 11/22 | 36 | [Sprint 3 Docs](https://github.com/User-Standart/API-6SEM/tree/main/docs) |
+| Sprint 1 | 09/07 – 09/27 | 30 | [Sprint 1 Docs](docs) |
+| Sprint 2 | 10/05 – 10/25 | 35 | [Sprint 2 Docs](docs) |
+| Sprint 3 | 11/02 – 11/22 | 36 | [Sprint 3 Docs](docs) |
 
-→ [Back to top](#User-Standart)
+→ [Back to top](#akavision)
 
 ---
 
@@ -216,7 +216,7 @@ Local Machine Learning models (embeddings & generation) · LGPD compliance
 
 > Additional tools (web framework, containerization, etc.) will be added here as the team defines them.
 
-→ [Back to top](#User-Standart)
+→ [Back to top](#akavision)
 
 ---
 
@@ -228,49 +228,23 @@ Local Machine Learning models (embeddings & generation) · LGPD compliance
 
 - [Git](https://git-scm.com/)
 
-### 1. Clone the repository with submodules
+### 1. Clone the repository
 
 ```bash
-git clone --recurse-submodules https://github.com/User-Standart/API-6SEM.git
+git clone https://github.com/User-Standart/API-6SEM.git
 cd API-6SEM
 ```
 
-> **Already cloned without `--recurse-submodules`?** Run the command below to initialize the submodules:
->
-> ```bash
-> git submodule update --init --recursive
-> ```
+The backend and frontend live in the `API-6SEM-BACKEND/` and `API-6SEM-FRONTEND/` folders of this repository.
 
-### 2. Configure the submodules to track their remote branches
+### 2. Set up each service
 
-By default, submodules are checked out in a detached HEAD state. To work on them as actual repositories (create branches, commit, push, etc.), run the following inside each submodule:
+Each service has its own setup instructions (dependencies, environment variables, run commands):
 
-```bash
-cd API-6SEM-BACKEND
-git checkout develop
-cd ..
+- [Backend setup](API-6SEM-BACKEND/README.md#running-locally)
+- [Frontend setup](API-6SEM-FRONTEND/README.md#running-locally)
 
-cd API-6SEM-FRONTEND
-git checkout develop
-cd ..
-```
-
-### 3. Set up each service
-
-Each submodule has its own setup instructions (dependencies, environment variables, run commands):
-
-- [Backend setup](https://github.com/User-Standart/API-6SEM-BACKEND#getting-started)
-- [Frontend setup](https://github.com/User-Standart/API-6SEM-FRONTEND#getting-started)
-
-### Pulling submodule updates
-
-To pull the latest changes from all submodules:
-
-```bash
-git submodule update --remote --merge
-```
-
-→ [Back to top](#User-Standart)
+→ [Back to top](#akavision)
 
 ---
 
@@ -280,7 +254,7 @@ git submodule update --remote --merge
 
 🚧 Under construction
 
-→ [Back to top](#User-Standart)
+→ [Back to top](#akavision)
 
 ---
 
@@ -290,7 +264,7 @@ git submodule update --remote --merge
 
 🚧 Under construction
 
-→ [Back to top](#User-Standart)
+→ [Back to top](#akavision)
 
 ---
 
@@ -311,7 +285,7 @@ git submodule update --remote --merge
 
 </div>
 
-→ [Back to top](#User-Standart)
+→ [Back to top](#akavision)
 
 ---
 
@@ -386,4 +360,4 @@ Always prefer descriptive, actionable messages such as:
 </details>
 
 
-→ [Back to top](#User-Standart)
+→ [Back to top](#akavision)

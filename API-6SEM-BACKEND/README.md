@@ -1,70 +1,70 @@
 # API-6SEM-BACKEND
 
-Backend do **AkaVision** — Classificador de Documentos Técnicos, projeto integrado Fatec SJC × AKAER.
+Backend of **AkaVision** — Technical Document Classifier, an integrated project between Fatec SJC and AKAER.
 
 ## Stack
 
-- **Linguagem:** Python
-- **Modelos de IA:** locais via Ollama (bge-m3 para embeddings, Llama 3.2 para respostas), sem chamadas a serviços externos (restrição do projeto)
-- **Banco de dados:** PostgreSQL com pgvector, via Docker Compose
-- _Framework web a confirmar com o time e documentar aqui assim que definido_
+- **Language:** Python
+- **AI models:** local via Ollama (bge-m3 for embeddings, Llama 3.2 for answers), with no calls to external services (project constraint)
+- **Database:** PostgreSQL with pgvector, via Docker Compose
+- _Web framework to be confirmed and documented here once defined_
 
-## Como rodar localmente
+## Running locally
 
 ```bash
-# 1. Clone o repositório (ou entre na pasta, se já estiver como submódulo do API-6SEM)
-git clone https://github.com/User-Standart/API-6SEM-BACKEND.git
-cd API-6SEM-BACKEND
+# 1. Clone the repository and open the backend folder
+git clone https://github.com/User-Standart/API-6SEM.git
+cd API-6SEM/API-6SEM-BACKEND
 
-# 2. Crie e ative um ambiente virtual
+# 2. Create and activate a virtual environment
 python -m venv .venv
 source .venv/bin/activate      # Linux/Mac
 .venv\Scripts\activate         # Windows
 
-# 3. Instale as dependências
+# 3. Install the dependencies
 pip install -r requirements.txt
 
-# 4. Configure as variáveis de ambiente
+# 4. Set up the environment variables
 cp .env.example .env
-# edite o .env com os valores da sua máquina
+# edit .env with your machine's values
 
-# 5. Suba o banco de dados
+# 5. Start the database
 docker compose up -d
 
-# 6. Rode a aplicação
-# (comando a definir assim que o framework for escolhido)
+# 6. Run the application
+# (command to be defined once the framework is chosen)
 ```
 
-## Pipeline RAG (EverySpec)
+## RAG Pipeline (EverySpec)
 
-Scripts que baixam as especificações do EverySpec, preparam os textos, geram os embeddings e respondem perguntas citando documento e página.
+Scripts that download the EverySpec specifications, prepare the texts, generate the embeddings and answer questions citing the document and page.
 
-| Etapa | Script |
+| Step | Script |
 |---|---|
-| Download dos PDFs | `baixar_everyspec.py` |
-| Extração do texto por página | `extrair_texto.py` |
-| Divisão em trechos e filtro de qualidade | `gerar_chunks.py` |
-| Geração dos embeddings pelo Ollama local | `gerar_embeddings.py` |
-| Importação dos embeddings gerados no Colab (`.npz`) | `importar_embeddings.py` |
-| Busca vetorial | `buscar.py` |
-| Resposta com citação das fontes | `responder.py` |
+| Download the PDFs | `baixar_everyspec.py` |
+| Extract text per page | `extrair_texto.py` |
+| Split into chunks and quality filter | `gerar_chunks.py` |
+| Generate embeddings with local Ollama | `gerar_embeddings.py` |
+| Import embeddings generated in Colab (`.npz`) | `importar_embeddings.py` |
+| Vector search | `buscar.py` |
+| Answer with source citations | `responder.py` |
 
-O passo a passo completo está em [docs/pipeline-rag.md](docs/pipeline-rag.md).
+The full step-by-step guide is in [docs/pipeline-rag.md](docs/pipeline-rag.md).
 
-PDFs, textos extraídos, trechos e o arquivo `.npz` ficam fora do Git. O `.npz` é compartilhado pelo Google Drive.
+PDFs, extracted texts, chunks and the `.npz` file are kept out of Git. The `.npz` file is shared via Google Drive.
 
-## Fluxo de contribuição
+## Contribution flow
 
-1. Crie uma branch a partir de `develop`: `feature/nome-da-tarefa`
-2. Commits e título do PR seguem [Conventional Commits](https://www.conventionalcommits.org), em inglês: `feat:`, `fix:`, `docs:`, `chore:`, `test:`
-3. Abra o PR contra `develop` — exige 1 aprovação, CI verde e título validado
-4. Merge sempre via **Squash and merge**
+1. Create a branch from `develop`: `feature/task-name`
+2. Commits and PR titles follow [Conventional Commits](https://www.conventionalcommits.org), in English: `feat:`, `fix:`, `docs:`, `chore:`, `test:`
+3. Open the PR against `develop` — requires 1 approval, green CI and a validated title
+4. Always merge with **Squash and merge**
 
 ## CI
 
-O workflow `Backend CI` roda em todo PR/push para `main` e `develop`: instala dependências e executa lint (`ruff`).
+The `Backend CI` workflow runs on every PR/push to `main` and `develop`: it installs the dependencies and runs lint (`ruff`).
 
 ## Links
 
-- Repositório agregador: [API-6SEM](https://github.com/User-Standart/API-6SEM)
-- Frontend: [API-6SEM-FRONTEND](https://github.com/User-Standart/API-6SEM-FRONTEND)
+- Main project: [API-6SEM](../README.md)
+- Frontend: [API-6SEM-FRONTEND](../API-6SEM-FRONTEND)
