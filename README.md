@@ -206,15 +206,19 @@ Closed decisions made by the Product Owner that orient every User Story. Changin
 
 <p align="center">
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+<img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
 <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" />
 <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
 </p>
 
 <p align="center">
-Local Machine Learning models (embeddings & generation) · LGPD compliance
+RAG with local models via Ollama (bge-m3 embeddings · Llama 3.2 generation) · pgvector semantic search · LGPD compliance
 </p>
-
-> Additional tools (web framework, containerization, etc.) will be added here as the team defines them.
 
 → [Back to top](#akavision)
 
@@ -278,7 +282,7 @@ Each service has its own setup instructions (dependencies, environment variables
 |------|------|-------------------|
 | Scrum Master | Tiago Bernardo | [LinkedIn](https://www.linkedin.com/in/tiagobernardosantos/) · [GitHub](https://github.com/TiagoBernardoSantos) |
 | Product Owner | Beatriz Sthefanny |[LinkedIn](https://www.linkedin.com/in/beatriz-santos-0b6773220/) · [GitHub](https://github.com/BeatrizSantos00) |
-| Developer | Caio Osorio | [LinkedIn](https://www.linkedin.com/in/caio-o-a67224200/) · [GitHub](https://github.com/User-Business) |
+| Developer | Caio Osorio | [LinkedIn](https://www.linkedin.com/in/caiovosorio/) · [GitHub](https://github.com/User-Standart) |
 | Developer | Aline Ramos | [LinkedIn](https://www.linkedin.com/in/aline-ramos-3186b130/) · [GitHub](https://github.com/allineramos) |
 | Developer | Victor Ryan | [LinkedIn](https://www.linkedin.com/in/victor-ryan-51738b261) · [GitHub](https://github.com/yzvictorr) |
 | Developer | Tiago Alberto | [LinkedIn](https://www.linkedin.com/in/tiago-alberto-303909167/) · [GitHub](https://github.com/tiago17santos) |

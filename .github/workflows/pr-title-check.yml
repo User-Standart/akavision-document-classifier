@@ -27,5 +27,5 @@ jobs:
           requireScope: false
           subjectPattern: ^[A-Z].*[a-zA-Z0-9]$
           subjectPatternError: |
-            O título do PR deve começar com letra maiúscula e não terminar com pontuação/espaço.
-            Exemplo válido: "feat: Add login screen"
+            The PR title must start with an uppercase letter and must not end with punctuation or whitespace.
+            Valid example: "feat: Add login screen"

@@ -3,8 +3,14 @@ name: Frontend CI
 on:
   pull_request:
     branches: [main, develop]
+    paths: ['API-6SEM-FRONTEND/**', '.github/workflows/frontend-ci.yml']
   push:
     branches: [main, develop]
+    paths: ['API-6SEM-FRONTEND/**', '.github/workflows/frontend-ci.yml']
+
+defaults:
+  run:
+    working-directory: API-6SEM-FRONTEND
 
 jobs:
   lint:
@@ -18,19 +24,14 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Set up Python (para os hooks de validação de commit/branch)
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
       - name: Install dependencies
         run: npm install
 
-      - name: Install pre-commit
-        run: pip install pre-commit
+      - name: Lint (ESLint)
+        run: npx eslint .
 
-      - name: Run pre-commit (ESLint + Prettier + hooks)
-        run: pre-commit run --all-files
+      - name: Format check (Prettier)
+        run: npx prettier --check "**/*.{js,vue,json,css,md}"
 
   build:
     runs-on: ubuntu-latest

@@ -5,9 +5,9 @@ Backend of **AkaVision** — Technical Document Classifier, an integrated projec
 ## Stack
 
 - **Language:** Python
+- **Web framework:** Django 5.2, with JWT authentication (PyJWT)
 - **AI models:** local via Ollama (bge-m3 for embeddings, Llama 3.2 for answers), with no calls to external services (project constraint)
-- **Database:** PostgreSQL with pgvector, via Docker Compose
-- _Web framework to be confirmed and documented here once defined_
+- **Database:** PostgreSQL with pgvector, via Docker Compose; personal data lives in a separate database (`credenciais` app with a dedicated DB router)
 
 ## Running locally
 
@@ -31,8 +31,9 @@ cp .env.example .env
 # 5. Start the database
 docker compose up -d
 
-# 6. Run the application
-# (command to be defined once the framework is chosen)
+# 6. Apply the migrations and run the application
+python manage.py migrate
+python manage.py runserver
 ```
 
 ## RAG Pipeline (EverySpec)
