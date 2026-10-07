@@ -231,8 +231,8 @@ Local Machine Learning models (embeddings & generation) · LGPD compliance
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/User-Standart/API-6SEM.git
-cd API-6SEM
+git clone https://github.com/User-Standart/akavision-document-classifier.git
+cd akavision-document-classifier
 ```
 
 The backend and frontend live in the `API-6SEM-BACKEND/` and `API-6SEM-FRONTEND/` folders of this repository.

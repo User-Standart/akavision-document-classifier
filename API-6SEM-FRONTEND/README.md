@@ -11,8 +11,8 @@ Frontend of **AkaVision** — Technical Document Classifier, an integrated proje
 
 ```bash
 # 1. Clone the repository and open the frontend folder
-git clone https://github.com/User-Standart/API-6SEM.git
-cd API-6SEM/API-6SEM-FRONTEND
+git clone https://github.com/User-Standart/akavision-document-classifier.git
+cd akavision-document-classifier/API-6SEM-FRONTEND
 
 # 2. Install the dependencies
 npm install

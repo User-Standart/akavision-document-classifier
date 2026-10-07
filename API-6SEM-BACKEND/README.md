@@ -13,8 +13,8 @@ Backend of **AkaVision** — Technical Document Classifier, an integrated projec
 
 ```bash
 # 1. Clone the repository and open the backend folder
-git clone https://github.com/User-Standart/API-6SEM.git
-cd API-6SEM/API-6SEM-BACKEND
+git clone https://github.com/User-Standart/akavision-document-classifier.git
+cd akavision-document-classifier/API-6SEM-BACKEND
 
 # 2. Create and activate a virtual environment
 python -m venv .venv
